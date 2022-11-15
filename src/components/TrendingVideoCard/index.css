@@ -1,0 +1,90 @@
+.trendi-list-item-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.thumbnail-container {
+  margin-right: 10px;
+}
+
+.trendi-thumb-image {
+  height: 130px;
+  width: 250px;
+}
+.details-container-trendi {
+  display: flex;
+  align-items: flex-start;
+}
+
+.video-title {
+  font-size: 17px;
+  font-family: Roboto;
+  color: #475569;
+  font-weight: 500;
+}
+.views-published-at-container {
+  display: flex;
+  align-items: flex-start;
+}
+.other-details {
+  color: #616e76;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.video-link-item {
+  text-decoration: none;
+}
+
+.trendi-channel-logo {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .trendi-list-item-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .details-container-trendi {
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .dets-sm {
+    display: flex;
+  }
+  .trendi-thumb-image {
+    height: 250px;
+    width: 100%;
+  }
+  .thumbnail-container {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .ch-prof-image {
+    height: 50px;
+    margin-right: 10px;
+  }
+  .trendi-channel-logo {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .details-container-trendi {
+    display: flex;
+  }
+
+  .title-other-dts-sm {
+    display: flex;
+    flex-direction: column;
+  }
+  .views-published-at-container {
+    display: flex;
+  }
+}

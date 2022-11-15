@@ -1,0 +1,113 @@
+.header-main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding: 15px;
+  padding-right: 30px;
+  align-items: center;
+  height: 8vh;
+}
+.header-image-logo-container {
+  display: flex;
+  align-items: center;
+}
+.theme-profile-logout-btn-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.next-watch-image-header {
+  height: 30px;
+}
+.header-profile-image {
+  height: 30px;
+}
+.header-logout-btn {
+  border-style: solid;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Roboto';
+  height: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  border-width: 1px;
+  width: 100px;
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+.dark-them-icon {
+  font-size: 23px;
+}
+.theme-toggle-btn {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+}
+.theme-profile-logout-btn-container-sm {
+  display: none;
+}
+.theme-profile-logout-btn-container {
+}
+.header-logout-btn-sm {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .theme-profile-logout-btn-container-sm {
+    display: block;
+    width: 130px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+  .header-main-container {
+    border-style: solid;
+  }
+  .theme-profile-logout-btn-container {
+    display: none;
+  }
+}
+
+.trigger-button {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: white;
+  padding: 8px 15px 8px 15px;
+  margin: 8px;
+  background-color: #7c69e9;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pooped {
+  height: 100vh;
+  width: 350px;
+  border-radius: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-pop-container {
+  align-self: flex-end;
+}
+
+.ul-list-container-left-nav {
+  width: 100%;
+}

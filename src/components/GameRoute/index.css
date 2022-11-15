@@ -1,0 +1,60 @@
+.home-super-container {
+  display: flex;
+}
+.gaming-main-container {
+  overflow-y: auto;
+  width: 100%;
+  margin-left: 0px;
+}
+.gaming-videos-list-ul-container {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.link-item {
+  text-decoration: none;
+  color: black;
+}
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+  width: 100%;
+}
+.failure-view-container {
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.failure-view-card {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.failure-view-image {
+  height: 300px;
+}
+.failure-view-title-text {
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+.failure-view-description {
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+.retry-btn {
+  padding: 10px;
+  width: 100px;
+  border-radius: 7px;
+  border-style: none;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-family: 'Roboto';
+}

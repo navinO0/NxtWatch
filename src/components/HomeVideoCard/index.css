@@ -1,0 +1,65 @@
+.video-cart-list-container {
+  margin-right: 10px;
+  width: 19vw;
+  min-width: 240px;
+
+  height: 340px;
+}
+
+.video-thumbnail-img-container {
+}
+.profile-image-container {
+  margin-right: 10px;
+}
+.profile-image-details-container {
+  display: flex;
+  align-items: flex-start;
+}
+.video-thumbnail-image {
+  width: 100%;
+}
+
+.channel-profile-image {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.details-container {
+}
+.video-title {
+  font-size: 17px;
+  font-family: Roboto;
+  color: #475569;
+  font-weight: 500;
+}
+.views-published-at-container {
+  display: flex;
+}
+.other-details {
+  color: #616e76;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+.video-link-item {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .video-cart-list-container {
+    width: 100%;
+    height: auto;
+  }
+  .views-published-at-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .profile-image-details-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    padding-top: 0px;
+  }
+}

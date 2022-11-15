@@ -1,0 +1,15 @@
+.nosavedvideos {
+  height: 200px;
+}
+.no-videos-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-videos-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}

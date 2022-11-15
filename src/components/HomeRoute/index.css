@@ -1,0 +1,114 @@
+.home-super-container {
+  display: flex;
+}
+.home-right-container {
+  height: 92vh;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+.home-main-container {
+}
+
+.videos-container {
+}
+
+.videos-ul-list-container {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-banner-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  background-size: cover;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+.home-nxt-image {
+  height: 40px;
+}
+.prem-promo-text {
+  font-family: Roboto;
+  font-size: 18px;
+}
+.getitnow-btn {
+  padding: 10px;
+  border: 1px solid;
+  background-color: transparent;
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+.failure-view-card {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.failure-view-image {
+  height: 300px;
+}
+
+.failure-view-description {
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+
+.home-search-container {
+  display: flex;
+  align-items: center;
+
+  background-color: #e2e8f0;
+  width: 310px;
+  border-radius: 6px;
+
+  border-style: solid;
+}
+.search-input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  font-family: 'Roboto';
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+}
+.search-icon {
+}
+.search-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+}
+.nosavedvideos {
+  height: 200px;
+}
+.no-videos-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-videos-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+.bannerClose-button {
+  align-self: flex-start;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
+}
+.d-none {
+  display: none;
+}

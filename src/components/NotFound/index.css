@@ -1,0 +1,23 @@
+.not-found-main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found-image {
+  height: 300px;
+}
+.not-found-title {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+.not-found-description {
+  color: #616e7c;
+  font-weight: 500;
+}
