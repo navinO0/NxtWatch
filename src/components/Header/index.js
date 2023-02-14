@@ -116,7 +116,10 @@ class Header extends Component {
                         modal
                         trigger={
                           <ThemeIconStatus isDark={isDark} type="button">
-                            <GiHamburgerMenu className="dark-them-icon" />
+                            <GiHamburgerMenu
+                              type="button"
+                              className="dark-them-icon"
+                            />
                           </ThemeIconStatus>
                         }
                       >

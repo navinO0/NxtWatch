@@ -16,6 +16,32 @@ const HomeVideoCard = props => {
   const splittedDate = formattedPublishedDate.split(' ')
   const slicedForamattedDate = splittedDate.slice(1)
   const resultDate = slicedForamattedDate.join(' ')
+  const dinominationInWord = viewCount[viewCount.length - 1]
+
+  const getDenomination = () => {
+    const getNumOnly = viewCount.slice(0, viewCount.length - 1)
+    const getNumInNormal = parseFloat(getNumOnly) * 1000
+    const stringedVal = getNumInNormal.toString()
+    const getAfterThousandDenomination = stringedVal.slice(
+      stringedVal.length - 3,
+      stringedVal.length + 1,
+    )
+    const getThousandDenominations = stringedVal.slice(0, 2)
+    const resultViews = `${getThousandDenominations}, ${getAfterThousandDenomination}`
+
+    switch (dinominationInWord) {
+      case 'K':
+        return resultViews
+      case 'M':
+        return ''
+
+      default:
+        return viewCount
+    }
+  }
+
+  const normalCount = getDenomination()
+
   return (
     <WatchContext.Consumer>
       {value => {
@@ -46,7 +72,7 @@ const HomeVideoCard = props => {
                   <div className="views-published-at-container">
                     <CustumeDetailsPara
                       isDark={isDark}
-                    >{`${viewCount} views`}</CustumeDetailsPara>
+                    >{`${normalCount} views`}</CustumeDetailsPara>
                     <CustumeDetailsPara isDark={isDark}>
                       {`• ${resultDate} ago`}
                     </CustumeDetailsPara>

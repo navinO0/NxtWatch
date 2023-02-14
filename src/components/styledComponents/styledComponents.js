@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 export const CustumeDetailsPara = styled.p`
   color: ${props => (props.isDark ? '#909090' : '#475569')};
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   margin-right: 10px;
   margin-bottom: 0px;
