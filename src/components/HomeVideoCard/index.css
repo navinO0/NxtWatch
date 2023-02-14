@@ -3,31 +3,35 @@
   width: 19vw;
   min-width: 240px;
 
-  height: 340px;
+  height: 240px;
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
 }
 
 .video-thumbnail-img-container {
 }
 .profile-image-container {
-  margin-right: 10px;
+  margin-top: 10px;
 }
 .profile-image-details-container {
   display: flex;
   align-items: flex-start;
 }
 .video-thumbnail-image {
-  width: 100%;
+  width: 100px;
+  margin-top: 20px;
 }
 
 .channel-profile-image {
   height: 40px;
-  margin-top: 10px;
 }
 
 .details-container {
+  padding: 7px;
 }
 .video-title {
-  font-size: 17px;
+  font-size: 12px;
   font-family: Roboto;
   color: #475569;
   font-weight: 500;
@@ -38,7 +42,7 @@
 .other-details {
   color: #616e76;
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   margin-right: 10px;
   margin-bottom: 0px;

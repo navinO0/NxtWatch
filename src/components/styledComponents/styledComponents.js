@@ -10,7 +10,7 @@ export const CustumeDetailsPara = styled.p`
 `
 export const VideoTitle = styled.p`
   font-size: 15px;
-  font-family: Roboto;
+  font-family: 'Roboto';
   color: ${props => (props.isDark ? ' #e2e8f0' : '#475569')};
   font-weight: 500;
   margin-bottom: 0px;

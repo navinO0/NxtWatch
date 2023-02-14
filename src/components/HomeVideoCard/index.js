@@ -29,8 +29,6 @@ const HomeVideoCard = props => {
                   alt="video thumbnail"
                   className="video-thumbnail-image"
                 />
-              </div>
-              <div className="profile-image-details-container">
                 <div className="profile-image-container">
                   <img
                     src={channel.profileImageUrl}
@@ -38,6 +36,8 @@ const HomeVideoCard = props => {
                     className="channel-profile-image"
                   />
                 </div>
+              </div>
+              <div className="profile-image-details-container">
                 <div className="details-container">
                   <VideoTitle isDark={isDark}>{title}</VideoTitle>
                   <CustumeDetailsPara isDark={isDark}>
