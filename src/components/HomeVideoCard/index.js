@@ -16,31 +16,26 @@ const HomeVideoCard = props => {
   const splittedDate = formattedPublishedDate.split(' ')
   const slicedForamattedDate = splittedDate.slice(1)
   const resultDate = slicedForamattedDate.join(' ')
-  const dinominationInWord = viewCount[viewCount.length - 1]
 
-  const getDenomination = () => {
-    const getNumOnly = viewCount.slice(0, viewCount.length - 1)
-    const getNumInNormal = parseFloat(getNumOnly) * 1000
-    const stringedVal = getNumInNormal.toString()
-    const getAfterThousandDenomination = stringedVal.slice(
-      stringedVal.length - 3,
-      stringedVal.length + 1,
-    )
-    const getThousandDenominations = stringedVal.slice(0, 2)
-    const resultViews = `${getThousandDenominations}, ${getAfterThousandDenomination}`
+  //   const getDenomination = () => {
+  //     const dinominationInWord = viewCount[viewCount.length - 1]
+  //     const getNumOnly = viewCount.slice(0, viewCount.length - 1)
+  //     const getNumInNormal = parseFloat(getNumOnly) * 1000
 
-    switch (dinominationInWord) {
-      case 'K':
-        return resultViews
-      case 'M':
-        return ''
+  //     switch (dinominationInWord) {
+  //       case 'K':
+  //         return new Intl.NumberFormat('en-IN', {
+  //           maximumSignificantDigits: 3,
+  //         }).format(getNumInNormal)
+  //       case 'M':
+  //         return ''
 
-      default:
-        return viewCount
-    }
-  }
+  //       default:
+  //         return viewCount
+  //     }
+  //   }
 
-  const normalCount = getDenomination()
+  //   const normalCount = getDenomination()
 
   return (
     <WatchContext.Consumer>
@@ -55,6 +50,8 @@ const HomeVideoCard = props => {
                   alt="video thumbnail"
                   className="video-thumbnail-image"
                 />
+              </div>
+              <div className="profile-image-details-container">
                 <div className="profile-image-container">
                   <img
                     src={channel.profileImageUrl}
@@ -62,8 +59,6 @@ const HomeVideoCard = props => {
                     className="channel-profile-image"
                   />
                 </div>
-              </div>
-              <div className="profile-image-details-container">
                 <div className="details-container">
                   <VideoTitle isDark={isDark}>{title}</VideoTitle>
                   <CustumeDetailsPara isDark={isDark}>
@@ -72,7 +67,7 @@ const HomeVideoCard = props => {
                   <div className="views-published-at-container">
                     <CustumeDetailsPara
                       isDark={isDark}
-                    >{`${normalCount} views`}</CustumeDetailsPara>
+                    >{`${viewCount} views`}</CustumeDetailsPara>
                     <CustumeDetailsPara isDark={isDark}>
                       {`• ${resultDate} ago`}
                     </CustumeDetailsPara>
