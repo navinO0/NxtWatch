@@ -1,6 +1,16 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {Redirect} from 'react-router-dom'
+import {TextField} from '@mui/material'
+import Input from '@mui/material/Input'
+
+import InputLabel from '@mui/material/InputLabel'
+import InputAdornment from '@mui/material/InputAdornment'
+
+import FormControl from '@mui/material/FormControl'
+import IconButton from '@mui/material/IconButton'
+import Visibility from '@mui/icons-material/Visibility'
+import VisibilityOff from '@mui/icons-material/VisibilityOff'
 
 import './index.css'
 
@@ -57,11 +67,11 @@ class LoginForm extends Component {
   }
 
   renderPasswordField = () => {
-    const {password, showpass} = this.state
+    const {password, showpass, showSubmitError} = this.state
 
     return (
       <>
-        <label className="input-label" htmlFor="password">
+        {/* <label className="input-label" htmlFor="password">
           PASSWORD
         </label>
         <input
@@ -82,17 +92,42 @@ class LoginForm extends Component {
           <label htmlFor="showPassInp" className="showpass">
             Show Password
           </label>
-        </div>
+        </div> */}
+        <FormControl
+          sx={{width: '100%'}}
+          variant="standard"
+          error={showSubmitError}
+        >
+          <InputLabel htmlFor="standard-adornment-password">
+            Password
+          </InputLabel>
+          <Input
+            id="standard-adornment-password"
+            type={showpass ? 'text' : 'password'}
+            onChange={this.onChangePassword}
+            value={password}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={this.onClickShowPass}
+                >
+                  {showpass ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+          />
+        </FormControl>
       </>
     )
   }
 
   renderUsernameField = () => {
-    const {username} = this.state
+    const {username, showSubmitError} = this.state
 
     return (
       <>
-        <label className="input-label" htmlFor="username">
+        {/* <label className="input-label" htmlFor="username">
           USERNAME
         </label>
         <input
@@ -102,6 +137,14 @@ class LoginForm extends Component {
           value={username}
           onChange={this.onChangeUsername}
           placeholder="Username"
+        /> */}
+        <TextField
+          id="standard-textarea"
+          value={username}
+          label="User Name"
+          variant="standard"
+          onChange={this.onChangeUsername}
+          error={showSubmitError}
         />
       </>
     )
@@ -125,7 +168,7 @@ class LoginForm extends Component {
           />
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button log button-login">
             Login
           </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}

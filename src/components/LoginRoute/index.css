@@ -115,12 +115,12 @@
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 14px;
-  color: #ffffff;
+
   height: 40px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 2px;
-  background-color: #0b69ff;
+
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -146,4 +146,25 @@
 
 .showpassContainer {
   margin-top: 10px;
+}
+
+.button-login {
+  cursor: pointer;
+  border: 0;
+
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+.log {
+  color: #0b69ff;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #0b69ff;
+}
+
+.button-login:hover {
+  color: white;
+
+  box-shadow: 0 0 20px #415a8355;
+  background-color: #0b69ff;
 }
