@@ -7,6 +7,7 @@ export const CustumeDetailsPara = styled.p`
   font-weight: 400;
   margin-right: 10px;
   margin-bottom: 0px;
+  transition: all ease 500ms;
 `
 export const VideoTitle = styled.p`
   font-size: 15px;
@@ -14,6 +15,7 @@ export const VideoTitle = styled.p`
   color: ${props => (props.isDark ? ' #e2e8f0' : '#475569')};
   font-weight: 500;
   margin-bottom: 0px;
+  transition: all ease 500ms;
 `
 
 export const SectionsContainer = styled.div`
@@ -21,6 +23,7 @@ export const SectionsContainer = styled.div`
   padding: 20px;
   width: 100%;
   overflow-y: auto;
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? '#0f0f0f' : '#f1f1f1')};
   @media screen and (max-width: 576px) {
     padding: 0px;
@@ -34,6 +37,7 @@ export const FailureViewContainer = styled.div`
   justify-content: center;
   width: 100%;
   overflow-y: auto;
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? '#0f0f0f' : '#f1f1f1')};
 `
 
@@ -43,6 +47,7 @@ export const LoaderContainer = styled.div`
   justify-content: center;
   height: 92vh;
   width: 100%;
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? '#0f0f0f' : '#f1f1f1')};
 `
 export const FailureTitle = styled.h1`
@@ -60,6 +65,7 @@ export const FailureDescription = styled.p`
   margin-right: 10px;
   margin-bottom: 0px;
   text-align: center;
+  transition: all ease 500ms;
 `
 
 export const RetryButton = styled.button`
@@ -71,12 +77,15 @@ export const RetryButton = styled.button`
   color: #ffffff;
   font-family: 'Roboto';
   cursor: pointer;
+
+  transition: all ease 500ms;
   margin-top: 30px;
 `
 export const LeftNavBarMainContainer = styled.div`
   width: 220px;
 
   min-width: 170px;
+  transition: all ease 500ms;
   height: 92vh;
   background-color: ${props => (props.isDark ? ' #212121' : '#f9f9f9')};
 `
@@ -87,6 +96,7 @@ export const HeaderMainContainer = styled.div`
   background-color: ${props => (props.isDark ? ' #212121' : '#f9f9f9')};
   padding-left: 30px;
   padding: 15px;
+  transition: all ease 500ms;
   @media screen and (max-width: 576px) {
     padding-right: 6px;
   }
@@ -99,6 +109,7 @@ export const ActiveLeftNaveButton = styled.button`
   align-items: center;
   flex-direction: row;
   cursor: pointer;
+  transition: all ease 500ms;
   background-color: ${props => {
     if (!props.isDark) {
       return props.selected ? '#e2e8f0' : 'transparent'
@@ -119,6 +130,7 @@ export const ActiveLeftNaveButton = styled.button`
 `
 export const ActiveLeftIcon = styled.p`
   margin-right: 10px;
+  transition: all ease 500ms;
 `
 
 export const ConstumeVideoDescription = styled.p`
@@ -128,6 +140,7 @@ export const ConstumeVideoDescription = styled.p`
   font-weight: 400;
   margin-right: 10px;
   margin-bottom: 0px;
+  transition: all ease 500ms;
 `
 
 export const CostumeLeftNavSection = styled.p`
@@ -135,6 +148,7 @@ export const CostumeLeftNavSection = styled.p`
   font-size: 15px;
   color: ${props => (props.isDark ? '#e2e8f0' : '#475569')};
   align-self: center;
+  transition: all ease 500ms;
 `
 export const SectionIconContainer = styled.p`
   color: ${props => {
@@ -143,7 +157,7 @@ export const SectionIconContainer = styled.p`
     }
     return props.selected ? '#ff0000' : '#475569'
   }};
-
+  transition: all ease 500ms;
   font-size: 17px;
   display: flex;
   align-items: center;
@@ -154,6 +168,7 @@ export const ThemeIconStatus = styled.button`
   border-style: none;
   cursor: pointer;
   outline: none;
+  transition: all ease 500ms;
 `
 export const SeachContainerInput = styled.div`
   background-color: ${props => (props.isDark ? 'transparent' : '#ffffff')};
@@ -173,6 +188,7 @@ export const SeachContainerInput = styled.div`
   }
   justify-content: space-between;
   border-radius: 3px;
+  transition: all ease 500ms;
 `
 
 export const SearchInputIconCont = styled.button`
@@ -188,6 +204,7 @@ export const SearchInputIconCont = styled.button`
   border-width: 1px;
   border-color: ${props => (props.isDark ? '#616e7c' : '#cbd5e1')};
   width: 70px;
+  transition: all ease 500ms;
 `
 export const SectionBannerContainer = styled.div`
   display: flex;
@@ -200,6 +217,7 @@ export const SectionBannerContainer = styled.div`
     padding: 30px;
     height: 120px;
   }
+  transition: all ease 500ms;
 `
 
 export const SectionBannerIconContainer = styled.div`
@@ -213,11 +231,13 @@ export const SectionBannerIconContainer = styled.div`
   margin-right: 10px;
   font-size: 26px;
   color: #ff0000;
+  transition: all ease 500ms;
 `
 
 export const SectionBannerTitle = styled.h1`
   font-family: 'Roboto';
   color: ${props => (props.isDark ? ' #ebebeb' : '#000000')};
+  transition: all ease 500ms;
 `
 export const ErrorTitle = styled.h1`
   font-size: 30px;
@@ -225,6 +245,7 @@ export const ErrorTitle = styled.h1`
   color: ${props => (props.isDark ? ' #ebebeb' : '#000000')};
   font-weight: 700;
   text-align: center;
+  transition: all ease 500ms;
 `
 
 export const ErrorDescription = styled.p`
@@ -234,6 +255,7 @@ export const ErrorDescription = styled.p`
   font-weight: 400;
   margin-right: 10px;
   margin-bottom: 0px;
+  transition: all ease 500ms;
   text-align: center;
 `
 export const VideoReactionButtons = styled.button`
@@ -248,6 +270,7 @@ export const VideoReactionButtons = styled.button`
   justify-content: flex-start;
   font-family: 'Roboto';
   font-size: 12px;
+  transition: all ease 500ms;
 `
 
 export const VideoReactionText = styled.p`
@@ -262,6 +285,7 @@ export const VideoReactionText = styled.p`
 
   font-family: 'Roboto';
   font-size: 14px;
+  transition: all ease 500ms;
 `
 export const HeaderLogoutButton = styled.button`
   border-style: solid;
@@ -273,6 +297,7 @@ export const HeaderLogoutButton = styled.button`
   font-weight: 400;
   border-width: 1px;
   width: 100px;
+  transition: all ease 500ms;
 
   color: ${props => (props.isDark ? '#ffffff' : '#4f46e5')};
   border-color: ${props => (props.isDark ? '#ffffff' : '#4f46e5')};
@@ -285,6 +310,7 @@ export const CostumeInput = styled.input`
   border-style: none;
   outline: none;
   font-size: 14px;
+  transition: all ease 500ms;
   background-color: transparent;
   color: ${props => (props.isDark ? '#909090' : '#475569')};
 `
@@ -295,7 +321,7 @@ export const OptContainer = styled.div`
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? ' #212121' : '#f9f9f9')};
 `
 export const PopContainer = styled.div`
@@ -307,7 +333,7 @@ export const PopContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? ' #212121' : '#f9f9f9')};
 `
 
@@ -319,7 +345,7 @@ export const PopContainerSections = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  transition: all ease 500ms;
   background-color: ${props => (props.isDark ? ' #212121' : '#f9f9f9')};
 `
 export const PopCloseBtn = styled.button`
@@ -337,6 +363,7 @@ export const PopCloseBtn = styled.button`
   cursor: pointer;
   border-radius: 4px;
   outline: none;
+  transition: all ease 500ms;
 `
 
 export const PopLogoutBtn = styled.button`
@@ -352,6 +379,7 @@ export const PopLogoutBtn = styled.button`
   border: none;
   border-radius: 4px;
   outline: none;
+  transition: all ease 500ms;
 `
 export const PopSuperContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
@@ -361,6 +389,7 @@ export const PopSuperContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
+  transition: all ease 500ms;
 `
 export const PopCloseBtnOpt = styled.button`
   font-size: 25px;
@@ -380,4 +409,5 @@ export const PopCloseBtnOpt = styled.button`
   cursor: pointer;
   border-radius: 4px;
   outline: none;
+  transition: all ease 500ms;
 `

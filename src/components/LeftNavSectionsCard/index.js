@@ -11,6 +11,7 @@ import {
   CostumeLeftNavSection,
 } from '../styledComponents/styledComponents'
 import WatchContext from '../../Context/WatchContext'
+import './index.css'
 
 const LeftNavSectionsCard = props => {
   const {eachOne} = props
@@ -54,7 +55,10 @@ const LeftNavSectionsCard = props => {
                   {renderSectionIcons()}
                 </SectionIconContainer>
 
-                <CostumeLeftNavSection isDark={isDark}>
+                <CostumeLeftNavSection
+                  isDark={isDark}
+                  className="hover-underline-animation"
+                >
                   {sectionText}
                 </CostumeLeftNavSection>
               </ActiveLeftNaveButton>
