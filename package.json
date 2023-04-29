@@ -48,6 +48,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "craco test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
